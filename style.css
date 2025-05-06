@@ -1,0 +1,116 @@
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #eef2f3, #8e9eab);
+      color: #333;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+
+    h2, h3 {
+      margin-top: 0;
+    }
+
+    form, .habit-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    input, select, button {
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #0f172a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #1e293b;
+    }
+
+    .habit {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-left: 6px solid #0f172a;
+      background: #f9fafb;
+      border-radius: 10px;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .habit:hover {
+      transform: scale(1.01);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    .streak {
+      font-weight: bold;
+      color: #10b981;
+    }
+
+    .log-button {
+      margin-top: 0.5rem;
+      background-color: #10b981;
+    }
+
+    .log-button:hover {
+      background-color: #059669;
+    }
+
+    .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+
+    .schedule-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    .preview-section {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #e0f2fe;
+      border-radius: 10px;
+      border: 2px dashed #0284c7;
+    }
+
+    .preview-section h3 {
+      margin-top: 0;
+      color: #0369a1;
+    }
+
+    .preview-content {
+      padding-top: 0.5rem;
+    }

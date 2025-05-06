@@ -1,0 +1,57 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker JHTK</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Habit Tracker JHTK</h1>
+    </header>
+    <main>
+      <h2>Create a New Habit</h2>
+      <form id="habitForm" class="habit-form">
+        <input type="text" id="habitName" placeholder="Habit name" required />
+        <div class="schedule-section">
+          <div>
+            <label for="days">Repeat Days</label>
+            <select id="days" multiple>
+              <option value="Sun">Sun</option>
+              <option value="Mon">Mon</option>
+              <option value="Tue">Tue</option>
+              <option value="Wed">Wed</option>
+              <option value="Thu">Thu</option>
+              <option value="Fri">Fri</option>
+              <option value="Sat">Sat</option>
+            </select>
+          </div>
+          <div>
+            <label for="startTime">Start Time</label>
+            <input type="time" id="startTime" />
+          </div>
+          <div>
+            <label for="endTime">End Time</label>
+            <input type="time" id="endTime" />
+          </div>
+        </div>
+        <button type="submit">Add Habit</button>
+        <p class="error" id="errorMsg"></p>
+      </form>
+  
+      <div class="preview-section">
+        <h3>Live Preview</h3>
+        <div id="livePreview" class="preview-content">
+          <p>Fill in the form to see a preview...</p>
+        </div>
+      </div>
+  
+      <div id="habitList"></div>
+    </main>
+  
+    <script src="script.js">
+    </script>
+  </body>
+  </html>
+  
